@@ -1,0 +1,78 @@
+:root {
+    --cinza-1: #E1E1E6;
+    --cinza-2: #C4C4CC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background-color: #000;
+}
+
+main {
+    background: url(../img/bg-cracha.png);
+    width: 375px;
+    height: 790px;
+}
+
+.container {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 174px;
+}
+
+.minha-foto::before {
+    content: url(../img/selo.svg);
+    position: absolute;
+    top: 160px;
+}
+
+.container h1 {
+    font: bold 24px 'Roboto', sans-serif;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: var(--cinza-1);
+}
+
+.meu-github {
+    font: normal 16px 'Roboto', sans-serif;
+    line-height: 26px;
+    color: var(--cinza-2);
+}
+
+.meu-github::before {
+    content: url(/img/icone-github.svg);
+    padding-right: 12px;
+}
+
+.container p {
+    display: block;
+    width: 262px;
+    text-align: center;
+    margin: 24px auto 24px auto;
+    font: normal 14px 'Roboto', sans-serif;
+    line-height: 24px;
+    color: var(--cinza-1);
+}
+
+.container li {
+    display: inline-block;
+    height: 48px;
+    margin-right: 5px;
+}
