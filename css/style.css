@@ -59,13 +59,13 @@ main {
     color: var(--cinza-1);
 }
 
-#container_my_github {
+.container_my_github {
     font: normal 16px 'Roboto', sans-serif;
     line-height: 26px;
     color: var(--cinza-2);
 }
 
-#container_my_github::before {
+.container_my_github::before {
     content: url(../img/icone-github.svg);
     padding-right: 12px;
 }
