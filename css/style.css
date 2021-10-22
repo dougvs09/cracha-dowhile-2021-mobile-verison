@@ -37,10 +37,19 @@ main {
     padding-top: 184px;
 }
 
+.container_my_photo img{
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
 .container_my_photo::before {
     content: url(../img/selo.svg);
     position: absolute;
     top: 160px;
+    z-index: 1;
 }
 
 .container h1 {
@@ -50,13 +59,13 @@ main {
     color: var(--cinza-1);
 }
 
-.container_my_github {
+#container_my_github {
     font: normal 16px 'Roboto', sans-serif;
     line-height: 26px;
     color: var(--cinza-2);
 }
 
-.container_my_github::before {
+#container_my_github::before {
     content: url(/img/icone-github.svg);
     padding-right: 12px;
 }
